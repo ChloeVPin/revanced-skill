@@ -345,7 +345,11 @@ Skip a ban only when the brief **explicitly** requests that look.
 - **Stale mono pamphlet:** entire page one fill, every block the same bordered card, no product UI, no proof metrics  
 - **Cramped density on marketing pages:** stacking sections with tiny gaps so nothing feels composed  
 - **Directory-card social proof** (four empty name tiles) presented as logos  
-- **Internal review receipt** styled as a primary footer artifact on a customer-facing marketing page (put receipts in agent chat / PR notes, not the hero of the brand close)
+- **Internal review receipt** styled as a primary footer artifact on a customer-facing marketing page (put receipts in agent chat / PR notes, not the hero of the brand close)  
+- **Three-cluster hero:** copy + floating metrics + product as three equal attention zones  
+- **Incomplete lifecycle:** claim end-to-end workflow but only show two steps  
+- **New scene every section:** layout family changes every band so the user relearns where to look  
+- **Max-volume brand:** serif + mono labels + accent eyebrows + nested proof objects all at once on a conversion page
 
 ### Motion / engineering
 
