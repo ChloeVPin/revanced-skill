@@ -18,14 +18,16 @@ Every rule is **contextual**. Read the brief first. Pull only what fits.
 
 ## 0. Intent lock
 
-You are here to ship interfaces that look **decided**, not **generated**.
+You are here to ship interfaces that look **decided and engineered**, not **generated** and not **stale**.
 
-Models statistically favor the same UI cocktail. Your job is to:
+Distinct brand direction is not enough. The page must also read like a senior product designer finished it: optical hierarchy, conversion sequence, layered surfaces, and room to breathe.
+
+Models statistically favor the same UI cocktail **or** overcorrect into flat monochrome pamphlets. Your job is to:
 
 1. Infer what this product actually needs  
 2. Prefer a project `DESIGN.md` when it exists  
-3. Build with positive structure  
-4. Block known slop signatures  
+3. Build with positive structure **and sales clarity**  
+4. Block known slop signatures **and** flat/stale execution  
 5. Prove you reviewed the work (receipt)
 
 ---
@@ -86,13 +88,15 @@ After the design read, set three integers 1–10. State them in the receipt.
 | **MOTION_BUDGET** | Static + hover | CSS transitions, light reveal | Scroll choreography, physics |
 | **INFO_DENSITY** | Gallery air | Normal marketing | Packed, cockpit-like |
 
-**Default baseline when the brief is a normal marketing landing:** `7 / 5 / 4`.
+**Default baseline when the brief is a normal marketing landing:** `7 / 5 / 3`.
+
+> **INFO_DENSITY note:** Marketing landings almost never want 5+. Dense copy walls and edge-to-edge sameness read as “rushed student mock,” not senior craft. Prefer air + clear bands.
 
 ### Quick presets
 
 | Use case | LAYOUT_RISK | MOTION_BUDGET | INFO_DENSITY |
 |---|---:|---:|---:|
-| Calm SaaS landing | 6 | 4 | 4 |
+| Calm SaaS landing | 6 | 5 | 3 |
 | Agency / experimental | 9 | 8 | 3 |
 | Premium consumer brand | 7 | 6 | 3 |
 | Dev portfolio | 6 | 4 | 4 |
@@ -150,30 +154,67 @@ If approximating platform-specific looks (e.g. “liquid glass”), **label the 
 - Pick a **pair** with character for the vibe (not “default system UI font” for brand landings).  
 - Control hierarchy with weight, size, color, and measure — not only giant `text-7xl`.  
 - Body measure roughly 45–75 characters where reading matters.  
-- Serif is fine for editorial/luxury; avoid serif as the primary UI face for operational software.
+- Serif is fine for editorial/luxury; avoid serif as the primary UI face for operational software.  
+- **Readable body floor:** marketing body ≥ ~16px (`text-base`) on mobile; secondary text ≥ ~14px. Do not ship gray-on-beige microcopy as the main reading path.  
+- **Contrast:** muted text must still clear WCAG AA against its surface. If it looks “tasteful but unreadable,” raise contrast.
 
 ### 5.3 Color locks
 
 - **One accent** across the page unless the contract says otherwise.  
 - Neutrals carry most of the UI; accent is scarce and intentional.  
 - Prefer off-black / off-white over pure `#000` / pure `#fff` for large fields.  
-- **Page theme lock:** light, dark, or system — chosen once. No random mid-page theme flips.
+- **Page theme lock:** light, dark, or system — chosen once. No random mid-page theme flips.  
+- **Not one flat wash:** a single canvas color with identical bordered cards everywhere reads stale. Use a **surface ladder** (canvas → raised → inset → inverse) and at least one tonal shift between major bands.  
+- Accent may appear as: primary CTA fill, focus, sparse rules, active states — not every heading.
 
 ### 5.4 Shape lock
 
-One primary radius language per page: sharp, soft, or pill. Document the single exception if you must mix.
+One primary radius language per page: sharp, soft, or pill. Document the single exception if you must mix.  
+Soft products: softer radii + diffused shadow. Editorial/print: tighter radii + hairlines. Stay coherent.
 
-### 5.5 Layout discipline
+### 5.5 Layout discipline + conversion sequence
+
+**Sales argument order** for product landings (adapt, do not skip the jobs):
+
+1. **Problem / promise** (headline)  
+2. **Explanation** (short subcopy)  
+3. **Primary CTA** (+ optional quiet secondary)  
+4. **Product proof** (real UI / workflow demo in or immediately under the hero)  
+5. **Proof metrics or logos** (credibility strip)  
+6. Deeper mechanism / features  
+7. Social proof with substance  
+8. Final CTA  
 
 - Hero headline: aim ≤ 2 lines on desktop.  
-- Hero subtext: short (about ≤ 20 words) and scannable.  
+- Hero subtext: short (about ≤ 20–28 words) and scannable.  
+- **Primary CTA hierarchy:** one obvious primary button style; secondary is text or ghost — never two equal solid buttons competing.  
 - Primary CTA visible without scroll on common laptop heights.  
 - Desktop nav: single row, compact height.  
-- Across many sections, vary layout families (split, zigzag, editorial, bento, full-bleed media) — do not clone the same band eight times.  
+- **Breathing room:** section padding on desktop roughly `clamp(4.5rem, 9vw, 8rem)` class air. If everything feels “stuck to the next block,” you under-spaced.  
+- Across many sections, vary layout families (split, zigzag, editorial, bento, full-bleed media) — do not clone the same bordered card grid eight times.  
 - Bento: N items → N cells; no hollow decorative empties.  
 - Long lists: do not default to hairline dividers on every row forever — consider cards, tabs, horizontal scroll, or grouped blocks.
 
-### 5.6 Interaction states
+### 5.6 Product proof (software landings)
+
+If the product is software, **show the product working** near the hero — not only a data table or brand essay.
+
+Minimum viable product proof:
+
+- A framed UI that shows **state** (review, approved, comment, assignee)  
+- At least one **collaboration signal** (comment thread, mention, resolved note, activity)  
+- Believable content for the domain (not lorem, not empty gray boxes)
+
+Empty nested rectangles without workflow = failed product proof.
+
+### 5.7 Social proof quality
+
+- Prefer **named outcomes** or compact case results over anonymous directory cards.  
+- Logo strips need visual weight and spacing — not four identical border boxes that look like placeholders.  
+- One strong quantitative row (cycle time, packages/month, rooms tracked) beats three vague claims.  
+- Invented metrics must be believable and labeled as illustrative if needed in real products; in demos, keep them grounded.
+
+### 5.8 Interaction states
 
 For interactive UI, include real:
 
@@ -182,13 +223,30 @@ For interactive UI, include real:
 - Error  
 - Active / pressed feedback  
 
-### 5.7 Images & media
+### 5.9 Images & media
 
 - Prefer real assets, generated comps, or stable placeholders (`picsum` with a descriptive seed, or local files).  
 - Do not build fake product UIs out of nested gray boxes to simulate a screenshot.  
-- Logo walls: real SVG marks when possible; place social proof under the hero, not as mystery floating chrome.
+- Logo walls: real SVG marks when possible; place social proof under the hero product proof, not as mystery floating chrome.
 
-### 5.8 Anti-convergence (avoid becoming a new template)
+### 5.10 Material finish (engineer taste)
+
+Senior craft signals:
+
+- Consistent light direction on shadows  
+- Hairline borders that match the neutral family  
+- Occasional inset wells vs raised cards (not every surface the same)  
+- Optical alignment (columns, baselines, icon boxes)  
+- Hover/focus that feels intentional, not bolted on  
+
+Anti-craft signals (fix these):
+
+- One color field, identical cards, tiny low-contrast meta everywhere  
+- Everything competing as “important right now” with no rest  
+- Receipt / internal notes competing with the customer close  
+- Flat pamphlet layout sold as “minimal”
+
+### 5.11 Anti-convergence (avoid becoming a new template)
 
 Even when following these rails, **do not** stamp every project with the same recipe.
 
@@ -198,8 +256,10 @@ Rotate intentionally across jobs:
 - Accent families  
 - Layout opening (left-heavy vs media-led vs typographic)  
 - Motion presence  
+- Surface material (ink/paper, soft product, industrial, luminous)
 
-If the last three projects would look related in a screenshot grid, you failed anti-convergence.
+If the last three projects would look related in a screenshot grid, you failed anti-convergence.  
+If the page is unique but **looks unfinished next to a competent SaaS landing**, you failed polish — fix polish without abandoning identity.
 
 ---
 
@@ -240,6 +300,10 @@ Skip a ban only when the brief **explicitly** requests that look.
 - Startup-name sludge (Acme, Nexus, SmartFlow, Cloudly)  
 - Empty verbs: elevate, unleash, seamless, next-gen, revolutionize — use concrete language  
 - “Quietly used by” style social-proof clichés  
+- **Stale mono pamphlet:** entire page one fill, every block the same bordered card, no product UI, no proof metrics  
+- **Cramped density on marketing pages:** stacking sections with tiny gaps so nothing feels composed  
+- **Directory-card social proof** (four empty name tiles) presented as logos  
+- **Internal review receipt** styled as a primary footer artifact on a customer-facing marketing page (put receipts in agent chat / PR notes, not the hero of the brand close)
 
 ### Motion / engineering
 
@@ -310,14 +374,21 @@ Before you claim the UI work is done, print a short receipt:
 - Axes: LAYOUT_RISK=· MOTION_BUDGET=· INFO_DENSITY=·
 - Foundation: …
 - Anti-convergence note: (what you deliberately varied)
+- Conversion sequence: problem → CTA → product proof → metrics/logos → depth → close
 - Scope mode: greenfield | touch-up | overhaul
 - Pre-ship:
-  - [ ] Hero CTA in first viewport
+  - [ ] Hero CTA hierarchy obvious (one primary)
+  - [ ] Product proof near hero if software
+  - [ ] Surface ladder (not one flat wash)
+  - [ ] Body/meta contrast readable on mobile
+  - [ ] Section air feels composed (not cramped)
+  - [ ] Social proof is credible (not placeholder tiles)
   - [ ] One accent + one radius system
   - [ ] No banned slop signatures (or listed intentional exceptions)
   - [ ] States covered where interactive
   - [ ] Reduced motion considered
   - [ ] Silent contracts preserved (if redesign)
+  - [ ] Agent receipt not polluting customer UI
 - Risks / follow-ups: …
 ```
 
