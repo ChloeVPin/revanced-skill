@@ -1,0 +1,20 @@
+{
+  "name": "revanced-skill",
+  "description": "Strict frontend rails for AI coding agents by chloevpin",
+  "owner": {
+    "name": "chloevpin",
+    "email": ""
+  },
+  "plugins": [
+    {
+      "name": "revanced-skill",
+      "description": "Strict frontend rails for AI agents including core design rails and full-output enforcement",
+      "version": "0.1.0",
+      "source": "./",
+      "author": {
+        "name": "chloevpin",
+        "email": ""
+      }
+    }
+  ]
+}

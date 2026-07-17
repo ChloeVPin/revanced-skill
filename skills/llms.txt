@@ -1,0 +1,2 @@
+revanced-frontend: Default strict frontend rails for AI coding agents. Infers a design read, respects project DESIGN.md, tunes three axes (LAYOUT_RISK / MOTION_BUDGET / INFO_DENSITY), enforces anti-slop construction rules, and requires a printed review receipt before claiming done. For landings, portfolios, marketing pages, and light redesigns.
+revanced-complete: Full-output enforcement. Bans placeholder code, truncated files, and soft "I can continue if you want" exits. Use whenever the agent must ship complete implementations.

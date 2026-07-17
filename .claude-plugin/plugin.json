@@ -1,0 +1,20 @@
+{
+  "name": "revanced-skill",
+  "description": "Strict frontend rails for AI agents — anti-slop design skills, project DESIGN contracts, and full-output enforcement",
+  "version": "0.1.0",
+  "author": {
+    "name": "chloevpin",
+    "email": ""
+  },
+  "homepage": "https://github.com/ChloeVPin/revanced-skill",
+  "repository": "https://github.com/ChloeVPin/revanced-skill",
+  "license": "MIT",
+  "keywords": [
+    "skills",
+    "frontend",
+    "design",
+    "anti-slop",
+    "agents",
+    "ui"
+  ]
+}
