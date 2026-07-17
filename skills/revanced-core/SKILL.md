@@ -237,12 +237,31 @@ Showing only Capture + Review and jumping to “Results” is a narrative fail.
 A busy buyer should understand the argument from **headings alone**.  
 Before ship, read only H1/H2s top to bottom. They must form a complete sales argument without body copy.
 
-**Cognitive restraint:**
+**Cognitive restraint / ultra-minimal default:**
 
 Marketing chrome must stay quieter than the product.  
-If the visitor is learning the **marketing design language** as hard as the product, simplify: fewer typefaces in UI chrome, fewer card dialects, fewer accent shout-outs, one grid.
+If the visitor is learning the **marketing design language** as hard as the product, simplify: fewer typefaces, fewer card dialects, fewer accent shout-outs, one grid.
 
-- **Breathing room:** section padding supports sequence; related idea pairs stay close.  
+Prefer **fewer sections that each do one job** over many half-styled bands.
+
+**When in doubt, cut.** A strong software landing is often only:
+
+1. Nav + CTA  
+2. Promise + short sub + CTA  
+3. One product proof  
+4. How it works (plain list or 3 steps — not a UI kit)  
+5. One proof (result or quote)  
+6. Final CTA  
+
+If you need monograms, dual mechanism theaters, metric triads, drawing grids, dark feature cards, *and* a timeline, you are almost certainly over-building.
+
+**Contrast is non-negotiable:**
+
+- Never put light/white text on a light surface.  
+- Never combine a utility like `bg-ink` + `text-white` with a CSS class that also sets `background` to a light token (e.g. `.sheet { background: #fff }`) — the light background can win and text disappears.  
+- Pre-flight: scan every text node; if `color` is light, `background` behind it must be dark. Fail the build if not.
+
+- **Breathing room:** one content width; generous section padding; related ideas stay close.  
 - Bento: N items → N cells; no hollow decorative empties.
 
 ### 5.6 Product proof (software landings)
@@ -375,7 +394,9 @@ Skip a ban only when the brief **explicitly** requests that look.
 - **New scene every section:** layout family changes every band so the user relearns where to look  
 - **Max-volume brand:** serif + mono labels + accent eyebrows + nested proof objects all at once on a conversion page  
 - **Reference twin:** same section skins as a known skill demo (zinc/emerald pills, identical 01-02-03 columns, same mock layout) with only copy changed  
-- **Convergence palette:** defaulting every SaaS page to cool zinc + emerald + full-pill CTAs without brand cause
+- **Convergence palette:** defaulting every SaaS page to cool zinc + emerald + full-pill CTAs without brand cause  
+- **Slop accumulation:** page-grid + monograms + dual cards + metrics + timeline + dark panels + serif/mono/chrome all at once  
+- **Invisible text:** light copy on light surfaces (including class/utility background fights)
 
 ### Motion / engineering
 
@@ -459,6 +480,8 @@ Before you claim the UI work is done, print a short receipt:
   - [ ] Eyebrow ration / no split-header default
   - [ ] Hero CTA hierarchy obvious (one primary)
   - [ ] Body contrast readable on mobile
+  - [ ] No light-on-light text (class/utility bg fights checked)
+  - [ ] Section count justified (cut if overbuilt)
   - [ ] One accent + one radius system
   - [ ] Character kept sparse (not max-volume brand)
   - [ ] No banned slop signatures (or listed intentional exceptions)
