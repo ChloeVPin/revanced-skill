@@ -11,6 +11,7 @@ All notable changes to revanced-skill live here.
 - `revanced-complete` — full-output enforcement skill.
 - `contracts/DESIGN.template.md` — project-local design contract template.
 - Packaging: `skills/llms.txt`, Claude plugin metadata, MIT license.
+- **Wave B:** `revanced-redesign`, `revanced-strict`, `revanced-stitch` (original wording; mechanisms compared against taste-skill counterparts).
 
 ### Credit
 

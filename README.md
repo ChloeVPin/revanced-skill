@@ -45,14 +45,26 @@ You can also copy any `skills/*/SKILL.md` into your project or paste it into a c
 
 ---
 
-## Skills (Wave A)
+## Skills
+
+### Wave A — Core
 
 | Folder | Install name | Description |
 |---|---|---|
 | **revanced-core** | `revanced-frontend` | Default rails: design read, DESIGN.md, axes, construction rules, slop defenses, review receipt |
 | **revanced-complete** | `revanced-complete` | Full-output enforcement: no placeholders, no truncated files |
 
-More skills (redesign, aesthetic packs, image pipeline) will land in later waves. Same install command will pick them up.
+### Wave B — Workflow
+
+| Folder | Install name | Description |
+|---|---|---|
+| **revanced-redesign** | `revanced-redesign` | Audit-first upgrades for existing projects; silent contracts for routes/forms/nav |
+| **revanced-strict** | `revanced-strict` | High-pressure plan + layout seed + AIDA + hero iron rules when output is too safe |
+| **revanced-stitch** | `revanced-stitch` | Writes semantic `DESIGN.md` for handoff (does not call Stitch/image APIs) |
+
+### Later waves
+
+Aesthetic packs (soft / minimal / brutal) and image pipeline skills are planned. Same install command will pick them up.
 
 ---
 

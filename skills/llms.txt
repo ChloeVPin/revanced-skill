@@ -1,2 +1,5 @@
 revanced-frontend: Default strict frontend rails for AI coding agents. Infers a design read, respects project DESIGN.md, tunes three axes (LAYOUT_RISK / MOTION_BUDGET / INFO_DENSITY), enforces anti-slop construction rules, and requires a printed review receipt before claiming done. For landings, portfolios, marketing pages, and light redesigns.
-revanced-complete: Full-output enforcement. Bans placeholder code, truncated files, and soft "I can continue if you want" exits. Use whenever the agent must ship complete implementations.
+revanced-complete: Full-output enforcement. Bans placeholder code, truncated files, and soft exits. Use whenever the agent must ship complete implementations.
+revanced-redesign: Audit-first redesign for existing codebases. Scan, diagnose, prioritized fixes, silent contracts (routes/forms/nav labels). Use when improving an existing project.
+revanced-strict: High-pressure rails when default output is too safe/template-like. Mandatory design_plan, layout seed, AIDA flow, 2-line hero iron rule, gapless grids, aggressive bans. Especially useful for GPT/Codex-class runs.
+revanced-stitch: Writes a semantic DESIGN.md contract for handoff (Stitch or coding agents). Does not call external image/Stitch APIs.
