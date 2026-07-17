@@ -172,28 +172,70 @@ If approximating platform-specific looks (e.g. “liquid glass”), **label the 
 One primary radius language per page: sharp, soft, or pill. Document the single exception if you must mix.  
 Soft products: softer radii + diffused shadow. Editorial/print: tighter radii + hairlines. Stay coherent.
 
-### 5.5 Layout discipline + conversion sequence
+### 5.5 Flow-first landing system (B2B product pages)
 
-**Sales argument order** for product landings (adapt, do not skip the jobs):
+A B2B landing page is **not a poster**. It is a sequence of questions the visitor samples:
 
-1. **Problem / promise** (headline)  
-2. **Explanation** (short subcopy)  
-3. **Primary CTA** (+ optional quiet secondary)  
-4. **Product proof** (real UI / workflow demo in or immediately under the hero)  
-5. **Proof metrics or logos** (credibility strip)  
-6. Deeper mechanism / features  
-7. Social proof with substance  
-8. Final CTA  
+1. What is this?  
+2. Is it for me?  
+3. How does it work?  
+4. Why believe you?  
+5. What do I do next?  
 
-- Hero headline: aim ≤ 2 lines on desktop.  
-- Hero subtext: short (about ≤ 20–28 words) and scannable.  
-- **Primary CTA hierarchy:** one obvious primary button style; secondary is text or ghost — never two equal solid buttons competing.  
-- Primary CTA visible without scroll on common laptop heights.  
-- Desktop nav: single row, compact height.  
-- **Breathing room:** section padding on desktop roughly `clamp(4.5rem, 9vw, 8rem)` class air. If everything feels “stuck to the next block,” you under-spaced.  
-- Across many sections, vary layout families (split, zigzag, editorial, bento, full-bleed media) — do not clone the same bordered card grid eight times.  
-- Bento: N items → N cells; no hollow decorative empties.  
-- Long lists: do not default to hairline dividers on every row forever — consider cards, tabs, horizontal scroll, or grouped blocks.
+Answer them **in order**. If art direction interrupts that order, cut the art direction.
+
+**Default ratio:** ~**85% flow / continuity** · ~**15% brand character**.  
+Character is a spice, not the meal. Distinctiveness that breaks comprehension loses to competent continuity.
+
+**Canonical section spine** (software / workflow products):
+
+| # | Section job | Typical layout (reuse this grammar) |
+|---:|---|---|
+| 1 | Nav + primary CTA | Single row |
+| 2 | Hero: promise + how | **Split:** copy left · **product UI right** (same viewport when possible) |
+| 3 | Trust logos / used-by | Strip **under** hero, not inside it |
+| 4 | Mechanism features | 1–2 zigzag pairs **max** (heading → body → evidence) |
+| 5 | **Full lifecycle** | Named steps end-to-end (e.g. Capture → Review → Close). Incomplete loops fail |
+| 6 | Social proof | One quote **or** one concrete case result — not both over-packaged |
+| 7 | Final CTA | Quiet close; same primary button language |
+
+**Visual grammar continuity (mandatory):**
+
+- Pick **one** reading channel (max content width) and keep returning to it.  
+- Reuse the same pattern: **heading → short explanation → product evidence**.  
+- Limit major layout families. A page with 8 sections does **not** need 8 different compositions.  
+- Cap consecutive zigzag text/image flips at **2**. Break with a full-width process band or quote.  
+- **Eyebrow ration:** at most ~1 small uppercase label per 3 sections. Do not brand every H2 with mono copper labels.  
+- **Ban split-headers** as default (big H2 left + floating explainer right). Stack headline + body.  
+- Under-design secondary material. If everything is “styled,” nothing is important.  
+- Whitespace separates sections and supports sequence — not atmospheric pauses between related ideas.
+
+**Hero composition (hard):**
+
+- Prefer **two zones only** in the first view: (A) category + headline + sub + CTA, (B) product interface that proves the headline.  
+- **Do not** add a third competing cluster (floating metric tiles, extra cards) in the hero. Metrics move under the product or into a quiet proof row after the UI.  
+- Claim-to-evidence proximity: the UI must support the **exact** promise in the headline (states, comments, approvals — not decorative chrome).  
+- Hero text stack max: eyebrow (optional) · H1 · sub · CTAs. No feature lists, logo rows, or pricing teasers inside the hero.  
+- Headline ≤ 2 lines desktop; sub ~≤ 20–24 words; one solid primary CTA + optional text secondary.  
+- Nav height ≤ ~72–80px desktop.
+
+**Lifecycle completeness:**
+
+If you claim an end-to-end workflow, **show the full loop** in one scannable section (3 clear steps is ideal).  
+Showing only Capture + Review and jumping to “Results” is a narrative fail.
+
+**Scannable heading chain:**
+
+A busy buyer should understand the argument from **headings alone**.  
+Before ship, read only H1/H2s top to bottom. They must form a complete sales argument without body copy.
+
+**Cognitive restraint:**
+
+Marketing chrome must stay quieter than the product.  
+If the visitor is learning the **marketing design language** as hard as the product, simplify: fewer typefaces in UI chrome, fewer card dialects, fewer accent shout-outs, one grid.
+
+- **Breathing room:** section padding supports sequence; related idea pairs stay close.  
+- Bento: N items → N cells; no hollow decorative empties.
 
 ### 5.6 Product proof (software landings)
 
@@ -374,18 +416,22 @@ Before you claim the UI work is done, print a short receipt:
 - Axes: LAYOUT_RISK=· MOTION_BUDGET=· INFO_DENSITY=·
 - Foundation: …
 - Anti-convergence note: (what you deliberately varied)
-- Conversion sequence: problem → CTA → product proof → metrics/logos → depth → close
+- Conversion sequence: what → for me → how → believe → next
+- Flow ratio check: ~85% continuity / ~15% character
 - Scope mode: greenfield | touch-up | overhaul
 - Pre-ship:
+  - [ ] Hero is two-zone (copy + product), not three-cluster
+  - [ ] Product UI proves the headline claim
+  - [ ] Logo/trust strip under hero (not inside)
+  - [ ] Full lifecycle section if workflow product
+  - [ ] H1/H2 chain scannable as complete argument
+  - [ ] Same visual grammar reused (not a new scene each band)
+  - [ ] Eyebrow ration / no split-header default
   - [ ] Hero CTA hierarchy obvious (one primary)
-  - [ ] Product proof near hero if software
-  - [ ] Surface ladder (not one flat wash)
-  - [ ] Body/meta contrast readable on mobile
-  - [ ] Section air feels composed (not cramped)
-  - [ ] Social proof is credible (not placeholder tiles)
+  - [ ] Body contrast readable on mobile
   - [ ] One accent + one radius system
+  - [ ] Character kept sparse (not max-volume brand)
   - [ ] No banned slop signatures (or listed intentional exceptions)
-  - [ ] States covered where interactive
   - [ ] Reduced motion considered
   - [ ] Silent contracts preserved (if redesign)
   - [ ] Agent receipt not polluting customer UI

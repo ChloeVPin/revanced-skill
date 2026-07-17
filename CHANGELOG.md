@@ -24,6 +24,18 @@ All notable changes to revanced-skill live here.
   - Expanded pre-ship receipt checklist
   - Default marketing density lowered (`INFO_DENSITY` 3)
 
+
+### Changed
+
+- **`revanced-frontend` flow-first system** (after second loss to Leon conversion structure):
+  - B2B question sequence (what / for me / how / believe / next)
+  - ~85% flow / ~15% character ratio
+  - Canonical section spine + visual grammar continuity
+  - Two-zone hero only; metrics not a third cluster
+  - Full lifecycle section required for workflow products
+  - Scannable H1/H2 chain; eyebrow ration; split-header ban
+  - Expanded pre-ship checklist for flow
+
 ### Credit
 
 - Inspired by [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill). Rules and wording are original.
