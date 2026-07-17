@@ -184,20 +184,28 @@ A B2B landing page is **not a poster**. It is a sequence of questions the visito
 
 Answer them **in order**. If art direction interrupts that order, cut the art direction.
 
-**Default ratio:** ~**85% flow / continuity** · ~**15% brand character**.  
-Character is a spice, not the meal. Distinctiveness that breaks comprehension loses to competent continuity.
+**Jobs, not skins.** Flow means the visitor’s questions get answered in order. It does **not** mean cloning another skill’s palette, type, pill buttons, three equal process columns, or zinc + emerald “safe SaaS” skin.
 
-**Canonical section spine** (software / workflow products):
+**Be better, not twin:**
 
-| # | Section job | Typical layout (reuse this grammar) |
+- If a side-by-side screenshot could pass as the same template with a logo swap, you failed.  
+- Transfer **jobs** (promise beside product proof, trust after hero, full lifecycle, quiet close).  
+- Invent **form**: own color system, type pair, radius language, process visualization, product chrome.  
+- Defaulting to cool gray + green accent + rounded-full CTAs + “01 / 02 / 03” columns is a **known AI/SaaS convergence trap** — ban it unless the brand already is that system.
+
+**Canonical section jobs** (software / workflow products) — implement with **original** composition:
+
+| # | Job the section must do | Freedom |
 |---:|---|---|
-| 1 | Nav + primary CTA | Single row |
-| 2 | Hero: promise + how | **Split:** copy left · **product UI right** (same viewport when possible) |
-| 3 | Trust logos / used-by | Strip **under** hero, not inside it |
-| 4 | Mechanism features | 1–2 zigzag pairs **max** (heading → body → evidence) |
-| 5 | **Full lifecycle** | Named steps end-to-end (e.g. Capture → Review → Close). Incomplete loops fail |
-| 6 | Social proof | One quote **or** one concrete case result — not both over-packaged |
-| 7 | Final CTA | Quiet close; same primary button language |
+| 1 | Nav + one obvious primary action | Your chrome |
+| 2 | Promise + how (product proof in first view) | Split, stacked, or board — your call |
+| 3 | Trust (logos or named studios) after the promise | Your strip treatment |
+| 4 | Mechanism (how it works in practice) | 1–2 evidence blocks, original layouts |
+| 5 | **Full lifecycle** end-to-end | Timeline, steps, board — not a forced clone of any reference |
+| 6 | Belief (quote and/or one hard result) | Light packaging |
+| 7 | Next action | Own the close; do not copy a stock dark footer recipe |
+
+Ownable systems beat borrowed competence. Competence without ownership is a mock.
 
 **Visual grammar continuity (mandatory):**
 
@@ -301,7 +309,23 @@ Rotate intentionally across jobs:
 - Surface material (ink/paper, soft product, industrial, luminous)
 
 If the last three projects would look related in a screenshot grid, you failed anti-convergence.  
-If the page is unique but **looks unfinished next to a competent SaaS landing**, you failed polish — fix polish without abandoning identity.
+If the page is unique but **looks unfinished next to a competent SaaS landing**, you failed polish — fix polish without abandoning identity.  
+If the page is competent because it **looks like Linear/zinc-emerald/taste-skill defaults**, you failed ownership — rebuild the visual system while keeping the jobs.
+
+### 5.12 Superiority bar (revanced ambition)
+
+Aim to beat generic strong SaaS landings on **both**:
+
+1. **Communication** — faster comprehension, clearer product proof, complete workflow story  
+2. **Ownership** — category-true materials, type, and product chrome the visitor can remember  
+
+Tactics that actually raise the bar:
+
+- Domain-true product UI (states, objects, vocabulary of the industry)  
+- One signature layout idea executed once (e.g. drawing-register table, sticky package rail) — not eight gimmicks  
+- Hard outcome line with specificity (time, team, context)  
+- Type + color that could not be swapped onto a random AI notes app unchanged  
+- Tighter craft than the reference (alignment, density of the mock, status design), not louder decoration
 
 ---
 
@@ -349,7 +373,9 @@ Skip a ban only when the brief **explicitly** requests that look.
 - **Three-cluster hero:** copy + floating metrics + product as three equal attention zones  
 - **Incomplete lifecycle:** claim end-to-end workflow but only show two steps  
 - **New scene every section:** layout family changes every band so the user relearns where to look  
-- **Max-volume brand:** serif + mono labels + accent eyebrows + nested proof objects all at once on a conversion page
+- **Max-volume brand:** serif + mono labels + accent eyebrows + nested proof objects all at once on a conversion page  
+- **Reference twin:** same section skins as a known skill demo (zinc/emerald pills, identical 01-02-03 columns, same mock layout) with only copy changed  
+- **Convergence palette:** defaulting every SaaS page to cool zinc + emerald + full-pill CTAs without brand cause
 
 ### Motion / engineering
 

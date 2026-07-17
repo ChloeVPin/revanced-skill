@@ -29,12 +29,10 @@ All notable changes to revanced-skill live here.
 
 - **`revanced-frontend` flow-first system** (after second loss to Leon conversion structure):
   - B2B question sequence (what / for me / how / believe / next)
-  - ~85% flow / ~15% character ratio
-  - Canonical section spine + visual grammar continuity
-  - Two-zone hero only; metrics not a third cluster
-  - Full lifecycle section required for workflow products
-  - Scannable H1/H2 chain; eyebrow ration; split-header ban
-  - Expanded pre-ship checklist for flow
+  - Jobs not skins — must not twin zinc/emerald taste demos
+  - Superiority bar: communication + ownership
+  - Two-zone hero; full lifecycle; scannable H1/H2 chain
+  - Bans: reference twin, convergence palette, incomplete loop
 
 ### Credit
 
