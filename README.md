@@ -18,11 +18,11 @@ LLMs fall back to high-probability UI: purple meshes, three equal cards, hollow 
 
 Revanced Skill turns taste into **rails**:
 
-1. **Design read** before code  
-2. **Project `DESIGN.md`** over global fashion  
-3. **Three axes** — layout risk, motion budget, information density  
-4. **Slop defenses** — named patterns to refuse  
-5. **Review receipt** — printed checklist before “done”
+1. **Concept first** — one sentence idea + craft-product or award-experience bar  
+2. **Owned system** — type, color, radius, motion (not zinc-emerald defaults)  
+3. **Conversion jobs in order** — what → for me → how → believe → next  
+4. **Signature moment** when ambition is high (one idea, not twenty effects)  
+5. **Slop defenses** + **review receipt** before “done”
 
 ---
 

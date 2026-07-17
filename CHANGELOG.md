@@ -34,6 +34,17 @@ All notable changes to revanced-skill live here.
   - Two-zone hero; full lifecycle; scannable H1/H2 chain
   - Bans: reference twin, convergence palette, incomplete loop
 
+### Changed
+
+- **`revanced-frontend` research rewrite (award + craft product):**
+  - Mandatory CONCEPT / BAR / SIGNATURE / SYSTEM before code
+  - Dual bars: craft-product (Linear/Stripe class) vs award-experience (Awwwards method)
+  - Signature moment rules; scroll narrative; tiny system; media + motion choreography
+  - Conversion jobs retained as jobs-not-skins
+  - Expanded slop bans (section checklist design, accumulation, invisible text)
+  - Receipt requires concept and signature fields
+
 ### Credit
 
 - Inspired by [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill). Rules and wording are original.
+- Award research: Awwwards evaluation weights; SOTD patterns; craft product sites (Linear/Stripe/Vercel/Raycast class).

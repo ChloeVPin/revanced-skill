@@ -5,6 +5,10 @@
 
 ## Product
 
+- **CONCEPT (one sentence):**
+- **BAR:** craft-product | award-experience
+- **SIGNATURE moment (0–1):**
+
 - **Name:**
 - **One-line purpose:**
 - **Primary audience:**
